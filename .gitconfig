@@ -1,0 +1,23 @@
+[push]
+    default = simple
+[color]
+    ui = auto
+[user]
+    email = artem.pronchakov@calisto.email
+    name = Artem Pronchakov
+[status]
+    relativePaths = true
+[color "branch"]
+    upstream = cyan
+    remote = yellow dim
+[color "status"]
+    header = normal
+    added = red dim
+    updated = green
+    changed = yellow dim
+    untracked = red
+    nobranch = red
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow dim)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lc = log ORIG_HEAD.. --stat --no-merges
+    unpushed = cherry -v
